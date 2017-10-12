@@ -47,9 +47,6 @@ app.post('/appuser-message', (req, res) => {
       size: 'tall',
       fallback: 'https://no-thanks.html'
     }]
-  }).then(() => {
-    console.log('success!');
-    res.end();
   })
   .catch((e) => {
     console.log('error! :: ', e);

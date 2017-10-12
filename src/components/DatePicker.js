@@ -39,8 +39,8 @@ class DatePicker extends Component {
       })
     }).then(() => {
       window.WebviewExtensions.close(
-        () => console.log("success!"),
-        e => console.log("failure", e)
+        () => console.log("closed webview"),
+        e => console.log("failed closing webview", e)
       );
     });
   }
@@ -53,8 +53,8 @@ class DatePicker extends Component {
   changeTitle(newTitle) {
     window.WebviewExtensions.setTitle(
       newTitle,
-      () => console.log(`Title changed to ${newTitle}!`),
-      e => console.log("failure", e)
+      () => console.log(`title changed to ${newTitle}!`),
+      e => console.log("failed setting title", e)
     );
   }
 
