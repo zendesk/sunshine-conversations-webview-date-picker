@@ -44,6 +44,7 @@ app.post('/appuser-message', (req, res) => {
       type: 'webview',
       text: 'Select Date',
       uri: `http://localhost:9000/webview?appUserId=${appUserId}`,
+      size: 'tall',
       fallback: 'https://no-thanks.html'
     }]
   }).then(() => {

@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import logo from "../logo.svg";
 
 import moment from 'moment';
-import { DateField, Calendar } from 'react-date-picker'
+import { Calendar } from 'react-date-picker'
 import 'react-date-picker/index.css'
 import qs from 'qs';
 
