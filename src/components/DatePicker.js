@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import logo from "../logo.svg";
 
 import moment from 'moment';
-import { DateField, Calendar } from 'react-date-picker'
+import { Calendar } from 'react-date-picker'
 import 'react-date-picker/index.css'
 import qs from 'qs';
 
@@ -40,8 +39,8 @@ class DatePicker extends Component {
       })
     }).then(() => {
       window.WebviewExtensions.close(
-        () => console.log("success!"),
-        e => console.log("failure", e)
+        () => console.log("closed webview"),
+        e => console.log("failed closing webview", e)
       );
     });
   }
@@ -54,8 +53,8 @@ class DatePicker extends Component {
   changeTitle(newTitle) {
     window.WebviewExtensions.setTitle(
       newTitle,
-      () => console.log(`Title changed to ${newTitle}!`),
-      e => console.log("failure", e)
+      () => console.log(`title changed to ${newTitle}!`),
+      e => console.log("failed setting title", e)
     );
   }
 

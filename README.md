@@ -5,9 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Get started:
 
 `yarn install`
-`yarn start`
+`npm run start`
 
-Runs the app in the development mode.<br>
+Runs server alongside the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
@@ -22,5 +22,5 @@ The build is minified and the filenames include the hashes.<br>
 
 ### `nodemon server/index.js`
 
-Runs the server code, using the built app code from the `build` folder.<br>
+Runs the server code.<br>
 Open [http://localhost:9000](http://localhost:9000) to view it in the browser.

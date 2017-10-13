@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import App from './components/App';
 import Webview from './components/Webview';
-import IframeEscape from "./components/IframeEscape";
 import registerServiceWorker from './registerServiceWorker';
 import { render } from 'react-snapshot';
 
@@ -19,11 +18,6 @@ const routes = [
   {
     path: "/webview",
     component: Webview,
-    exact: true
-  },
-  {
-    path: "/iframe-escape",
-    component: IframeEscape,
     exact: true
   }
 ];

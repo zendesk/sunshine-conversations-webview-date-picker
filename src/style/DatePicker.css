@@ -1,12 +1,18 @@
 .date-picker .react-date-picker__calendar {
-    display: flex;
+    display: block;
 }
 
 .date-picker .react-date-picker__month-view {
+    display: block;
     margin: auto;
 }
 
 .date-picker .confirm-date {
-    margin: 15px auto;
-    display: block;
+    width: 98%;
+    bottom: 0px;
+    padding: 10px;
+    margin: 5px 4px;
+    position: absolute;
+    background: #00aeff;
+    border-color: #00aeff;
 }

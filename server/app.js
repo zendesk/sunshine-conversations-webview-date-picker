@@ -44,11 +44,9 @@ app.post('/appuser-message', (req, res) => {
       type: 'webview',
       text: 'Select Date',
       uri: `http://localhost:9000/webview?appUserId=${appUserId}`,
+      size: 'tall',
       fallback: 'https://no-thanks.html'
     }]
-  }).then(() => {
-    console.log('success!');
-    res.end();
   })
   .catch((e) => {
     console.log('error! :: ', e);
