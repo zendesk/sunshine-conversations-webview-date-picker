@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const SmoochCore = require('smooch-core');
+const moment = require('moment');
 
 const smooch = new SmoochCore({
   jwt: 'your_jwt'
@@ -22,7 +23,7 @@ app.post('/date-selected', (req, res) => {
   smooch.appUsers.sendMessage(req.body.appUserId, {
     role: 'appMaker',
     type: 'text',
-    text: `You have selected ${req.body.date}. Enjoy your flight!`
+    text: `You have selected ${moment(req.body.date).format('LL')}. Enjoy your flight!`
   }).then(() => {
     console.log('success!');
     res.end();
@@ -47,6 +48,9 @@ app.post('/appuser-message', (req, res) => {
       size: 'tall',
       fallback: 'https://no-thanks.html'
     }]
+  })
+  .then(() => {
+    res.end();
   })
   .catch((e) => {
     console.log('error! :: ', e);

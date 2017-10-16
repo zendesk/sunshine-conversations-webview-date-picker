@@ -20,8 +20,20 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <script src='https://cdn.smooch.io/webview-extensions.min.js'></script>
-  </head>
+    <script>
+      (function(d, s, id) {
+          var js,
+              fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {
+              return;
+          }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = 'https://cdn.smooch.io/webview-extensions.min.js';
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'WebviewExtensions'));
+    </script>
+    </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.

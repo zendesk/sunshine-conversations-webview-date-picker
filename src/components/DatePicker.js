@@ -12,19 +12,6 @@ class DatePicker extends Component {
     date: moment()
   }
 
-  componentDidMount() {
-    const work = () => {
-      console.log(window.WebviewExtensions.platform);
-      this.changeTitle(document.title);
-    };
-    if (window.WebviewExtensions) {
-      work();
-    } else {
-      window.webviewExtensionsInit = work;
-    }
-    console.log(window.name);
-  }
-
   onClick(e) {
     e.preventDefault();
 
@@ -51,14 +38,21 @@ class DatePicker extends Component {
   }
 
   changeTitle(newTitle) {
-    window.WebviewExtensions.setTitle(
-      newTitle,
-      () => console.log(`title changed to ${newTitle}!`),
-      e => console.log("failed setting title", e)
-    );
+    const work = () => {
+      window.WebviewExtensions.setTitle(
+        newTitle,
+        () => console.log(`title changed to ${newTitle}!`),
+        e => console.log("failed setting title", e)
+      );
+    };
+    if (window.WebviewExtensions) {
+      work();
+    } else {
+      window.webviewExtensionsInit = work;
+    }
   }
 
-  onChange = (dateString, { dateMoment, timestamp }) => {
+  onChange = (dateString, {dateMoment, timestamp}) => {
     this.setState({
       date: dateMoment
     });
@@ -68,13 +62,13 @@ class DatePicker extends Component {
   render() {
     return <div className="date-picker">
                 <Calendar
-                    onChange={this.onChange.bind(this)}
-                    date={this.state.date}
-                />
+      onChange={this.onChange.bind(this)}
+      date={this.state.date}
+      />
                 <br/>
                 <button
-                    className="btn btn-primary confirm-date"
-                    onClick={e => this.onClick(e)}>Confirm Date
+      className="btn btn-primary confirm-date"
+      onClick={e => this.onClick(e)}>Confirm Date
                 </button>
     </div>;
   }
