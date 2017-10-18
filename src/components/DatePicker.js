@@ -25,7 +25,7 @@ class DatePicker extends Component {
         appUserId: qs.parse(window.location.search.replace('?', '')).appUserId
       })
     }).then(() => {
-      window.WebviewExtensions.close(
+      window.WebviewSdk.close(
         () => console.log("closed webview"),
         e => console.log("failed closing webview", e)
       );
@@ -39,16 +39,16 @@ class DatePicker extends Component {
 
   changeTitle(newTitle) {
     const work = () => {
-      window.WebviewExtensions.setTitle(
+      window.WebviewSdk.setTitle(
         newTitle,
         () => console.log(`title changed to ${newTitle}!`),
         e => console.log("failed setting title", e)
       );
     };
-    if (window.WebviewExtensions) {
+    if (window.WebviewSdk) {
       work();
     } else {
-      window.webviewExtensionsInit = work;
+      window.webviewSdkInit = work;
     }
   }
 
