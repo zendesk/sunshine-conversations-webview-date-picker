@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Get started:
 
 `yarn install`
+
 `npm run start`
 
 Runs server alongside the app in the development mode.<br>
