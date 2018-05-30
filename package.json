@@ -1,6 +1,7 @@
 {
   "name": "webviews-examples",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "proxy": "http://localhost:9000",
   "dependencies": {
