@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+# ⚠️ NOTICE: The repo is no longer maintained. 
+
+For a webview datepicker example, please see the [datepicker-react example](https://github.com/zendesk/sunshine-conversations-conversation-extension-examples/tree/master/datepicker-react).
 
 # Webview Example
 
