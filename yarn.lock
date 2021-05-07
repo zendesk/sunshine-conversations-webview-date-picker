@@ -1557,7 +1557,7 @@ concat-stream@^1.6.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-concurrently@^3.5.0:
+concurrently@3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-3.5.0.tgz#8cf1b7707a6916a78a4ff5b77bb04dec54b379b2"
   dependencies:
@@ -6294,9 +6294,9 @@ smooch-core@5.2.0:
     jsonwebtoken "5.4.1"
     node-fetch "1.7.2"
 
-smooch@4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/smooch/-/smooch-4.0.4.tgz#ba092e56c2d4682095e961ad4c7f9de2a889a080"
+smooch@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/smooch/-/smooch-4.3.2.tgz#0e9f758b21962e921ce34e3b20dae5e3d934a0b8"
 
 sntp@1.x.x:
   version "1.0.9"
@@ -6814,8 +6814,8 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
 ua-parser-js@^0.7.9:
-  version "0.7.14"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.14.tgz#110d53fa4c3f326c121292bbeac904d2e03387ca"
+  version "0.7.28"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.28.tgz#8ba04e653f35ce210239c64661685bf9121dec31"
 
 uglify-js@3.1.x, uglify-js@^3.0.13:
   version "3.1.0"
