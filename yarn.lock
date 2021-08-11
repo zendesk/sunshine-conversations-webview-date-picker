@@ -1557,7 +1557,7 @@ concat-stream@^1.6.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-concurrently@^3.5.0:
+concurrently@3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-3.5.0.tgz#8cf1b7707a6916a78a4ff5b77bb04dec54b379b2"
   dependencies:
@@ -4980,8 +4980,8 @@ path-key@^2.0.0:
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-2.0.1.tgz#411cadb574c5a140d3a4b1910d40d80cc9f40b40"
 
 path-parse@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.5.tgz#3c1adf871ea9cd6c9431b6ea2bd74a0ff055c4c1"
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
 
 path-to-regexp@0.1.7:
   version "0.1.7"
@@ -6294,9 +6294,9 @@ smooch-core@5.2.0:
     jsonwebtoken "5.4.1"
     node-fetch "1.7.2"
 
-smooch@4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/smooch/-/smooch-4.0.4.tgz#ba092e56c2d4682095e961ad4c7f9de2a889a080"
+smooch@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/smooch/-/smooch-4.3.2.tgz#0e9f758b21962e921ce34e3b20dae5e3d934a0b8"
 
 sntp@1.x.x:
   version "1.0.9"
