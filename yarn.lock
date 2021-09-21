@@ -1557,7 +1557,7 @@ concat-stream@^1.6.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-concurrently@^3.5.0:
+concurrently@3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-3.5.0.tgz#8cf1b7707a6916a78a4ff5b77bb04dec54b379b2"
   dependencies:
@@ -6294,9 +6294,9 @@ smooch-core@5.2.0:
     jsonwebtoken "5.4.1"
     node-fetch "1.7.2"
 
-smooch@4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/smooch/-/smooch-4.0.4.tgz#ba092e56c2d4682095e961ad4c7f9de2a889a080"
+smooch@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/smooch/-/smooch-4.3.2.tgz#0e9f758b21962e921ce34e3b20dae5e3d934a0b8"
 
 sntp@1.x.x:
   version "1.0.9"
@@ -6741,8 +6741,8 @@ tmp@^0.0.31:
     os-tmpdir "~1.0.1"
 
 tmpl@1.0.x:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.4.tgz#23640dd7b42d00433911140820e5cf440e521dd1"
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.5.tgz#8683e0b902bb9c20c4f726e3c0b69f36518c07cc"
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"
